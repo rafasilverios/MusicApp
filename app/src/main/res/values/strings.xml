@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+    <string name="search">Search</string>
+    <string name="all">All</string>
+    <string name="album">Album</string>
+    <string name="favourite">Favourite</string>
+    <string name="coldplay_awarded_song">Coldplay awarded Song</string>
+    <string name="john_doe">John Doe</string>
+    <string name="enter_sandman">Enter Sandman</string>
+    <string name="metallica">Metallica</string>
+    <string name="fade_to_black">Fade to Black</string>
+    <string name="the_mashup_mixtape">The Mashup Mixtape</string>
+    <string name="justin_bieber">Justin Bieber</string>
+    <string name="what_you_got">What You Got</string>
+    <string name="akon">Akon</string>
+    <string name="view_all_80_item">View All (80 item)</string>
+    <string name="music">MUSIC</string>
+    <string name="todo">TODO</string>
+    <string name="_3_54_m">3:54 m</string>
+</resources>

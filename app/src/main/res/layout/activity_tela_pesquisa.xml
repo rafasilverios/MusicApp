@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaPesquisa">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textSize="20dp"
+        android:text="RESULTADO"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="24dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/backb" />
+
+    <ImageView
+        android:id="@+id/ivCaixar"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/caixab" />
+
+    <ImageButton
+        android:id="@+id/ibPlay2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/ibPontos2"
+        app:layout_constraintTop_toTopOf="@+id/ivCaixar"
+        app:srcCompat="@drawable/ic_baseline_play_black_arrow_24" />
+
+    <ImageButton
+        android:id="@+id/ibPontos2"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/ivCaixar"
+        app:layout_constraintTop_toTopOf="@+id/ivCaixar"
+        app:srcCompat="@drawable/pontos1" />
+
+    <TextView
+        android:id="@+id/tvEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/enter_sandman"
+        android:textColor="@color/black"
+        android:fontFamily="serif"
+        app:layout_constraintStart_toEndOf="@id/ivMetallica"
+        app:layout_constraintTop_toTopOf="@+id/ivCaixar"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <TextView
+        android:id="@+id/tvMetallica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/metallica"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/ivMetallica"
+        app:layout_constraintTop_toBottomOf="@+id/tvEnter"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <ImageView
+        android:id="@+id/ivMetallica"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivCaixar"
+        app:srcCompat="@drawable/metallica" />
+
+    <ImageView
+        android:id="@+id/ivCaixab2"
+        android:layout_width="wrap_content"
+        android:layout_height="78dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCaixar"
+        app:srcCompat="@drawable/caixab" />
+
+    <ImageButton
+        android:id="@+id/ibPlay3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/white"
+        app:srcCompat="@drawable/ic_baseline_play_black_arrow_24"
+        app:layout_constraintTop_toTopOf="@+id/ivCaixab2"
+        app:layout_constraintEnd_toStartOf="@+id/ibPontos2"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="237dp" />
+
+    <ImageButton
+        android:id="@+id/ibPontos3"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/ibPontos2"
+        app:layout_constraintTop_toTopOf="@+id/ivCaixab2"
+        app:srcCompat="@drawable/pontos1"
+        tools:layout_editor_absoluteX="329dp"
+        tools:layout_editor_absoluteY="236dp" />
+
+    <TextView
+        android:id="@+id/tvFade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/fade_to_black"
+        android:textColor="@color/black"
+        android:fontFamily="serif"
+        app:layout_constraintStart_toEndOf="@id/ivMetallica2"
+        app:layout_constraintTop_toTopOf="@+id/ivCaixab2"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <TextView
+        android:id="@+id/tvMetallica2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/metallica"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/ivMetallica2"
+        app:layout_constraintTop_toBottomOf="@+id/tvFade"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <ImageView
+        android:id="@+id/ivMetallica2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivCaixab2"
+        app:srcCompat="@drawable/metallica2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
