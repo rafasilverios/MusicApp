@@ -1,5 +1,5 @@
 # Clone MusicApp
-## Clique em "master"
+#### Clique em "master"
 
 Clone da tela de um app de Musica, utilizando Android Studios + JAVA.
 
