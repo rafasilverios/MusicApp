@@ -1,2 +1,0 @@
-andoid linguist-generated=true
-*.android linguist-detectable=true
