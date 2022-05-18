@@ -6,7 +6,6 @@ Esses são os primeiros passos em desenvolvimento em android. Se clicar em Play 
 
 São apenas implementações visuais para testar o que estou aprendendo em Android/JAVA.
 #
-#
 
 ### ATUALIZAÇÃO 1 (18/05/2022):
 - Implementação de Shared Preference para armazenar alguns dados em cache.
