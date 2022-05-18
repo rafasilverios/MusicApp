@@ -7,11 +7,10 @@ Esses são os primeiros passos em desenvolvimento em android. Se clicar em Play 
 São apenas implementações visuais para testar o que estou aprendendo em Android/JAVA.
 
 
-### Atualizações 1 (18/05/2022):
+### ATUALIZAÇÃO 1 (18/05/2022):
 - Implementação de Shared Preference para armazenar alguns dados em cache.
-- Foi criada uma tela de cadastro para gravar os dados e uma tela de perfil para apresentar os dados cadastrados (Obs.: A senha não será armazenada, pois este não é um metodo de armazenamento seguro).
- 
-##### Passo a passo para teste: 
+- Foi criada uma tela de cadastro para gravar os dados e uma tela de perfil para apresentar os dados cadastrados (Obs.: A senha não será armazenada, pois este não é um metodo de armazenamento seguro). 
+##### PASSO A PASSO PARA TESTE: 
 - Acesse o App e informe os dados solicitados e pressione o botão "cadastrar";
 - Na tela principal, clique no icone de perfil (canto inferior direito);
 - Na tela de perfil, ao lado do texto, clique na flecha para baixo;
