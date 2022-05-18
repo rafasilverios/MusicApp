@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        /*ImageView ivLupa = findViewById(R.id.ivLupa);
-        ivLupa.setOnClickListener(view2 -> {
-            Intent intent2 = new Intent(getApplicationContext(), ListaMusicas.class);
+        ImageButton ibPerfil = findViewById(R.id.ibPerfil);
+        ibPerfil.setOnClickListener(view3 -> {
+            Intent intent2 = new Intent(getApplicationContext(), ApresentaDados.class);
             startActivity(intent2);
-        });*/
+        });
     }
 }

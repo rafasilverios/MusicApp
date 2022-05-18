@@ -9,7 +9,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MusicApp">
         <activity
-            android:name=".views.ListaMusicas"
+            android:name=".ApresentaDados"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".TelaPesquisa"
@@ -18,8 +21,8 @@
             android:name=".NowPlaying"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".TelaLogin"
+            android:exported="true"            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
