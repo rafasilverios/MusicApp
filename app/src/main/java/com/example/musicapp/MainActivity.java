@@ -3,26 +3,36 @@ package com.example.musicapp;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
+
+import com.example.musicapp.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
+    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
 
-        ImageButton ibPlay2 = findViewById(R.id.ibPlay2);
-        ibPlay2.setOnClickListener(view1 -> {
-            Intent intent = new Intent(getApplicationContext(), NowPlaying.class);
-            startActivity(intent);
+        binding.ibPlay2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), NowPlaying.class);
+                startActivity(intent);
+            }
         });
 
-        ImageButton ibPerfil = findViewById(R.id.ibPerfil);
-        ibPerfil.setOnClickListener(view3 -> {
-            Intent intent2 = new Intent(getApplicationContext(), ApresentaDados.class);
-            startActivity(intent2);
+        binding.ibPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(getApplicationContext(), PerfilActivity.class);
+                startActivity(intent2);
+            }
         });
     }
 }

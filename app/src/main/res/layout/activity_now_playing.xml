@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/ivMetallicaTransp"
@@ -17,15 +17,13 @@
         android:id="@+id/tvNowPlaying"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
+        android:layout_marginTop="32dp"
         android:text="Now Playing "
         android:textColor="@color/white"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/ibBack2"
@@ -33,8 +31,8 @@
         android:layout_height="28dp"
         android:layout_marginStart="32dp"
         android:backgroundTint="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="@+id/tvNowPlaying"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_baseline_arrow_back_ios_new_24" />
 
     <TextView
@@ -45,7 +43,7 @@
         android:layout_marginTop="110dp"
         android:text="@string/enter_sandman"
         android:textColor="@color/white"
-        android:fontFamily="serif"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent    "
         app:layout_constraintTop_toBottomOf="@+id/tvNowPlaying"
         tools:layout_editor_absoluteX="135dp"
@@ -59,8 +57,8 @@
         android:text="@string/metallica"
         android:textColor="@color/white"
         android:textSize="13sp"
-        app:layout_constraintTop_toBottomOf="@+id/tvEnter2"
         app:layout_constraintStart_toStartOf="@id/tvEnter2"
+        app:layout_constraintTop_toBottomOf="@+id/tvEnter2"
         tools:layout_editor_absoluteX="135dp"
         tools:layout_editor_absoluteY="253dp" />
 
@@ -69,9 +67,9 @@
         android:layout_width="match_parent"
         android:layout_height="574dp"
         android:layout_marginTop="248dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/fundonp" />
 
     <ImageView
@@ -90,7 +88,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/fade_to_black"
         android:textColor="@color/black"
-        android:fontFamily="serif"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@id/ivMetallica2"
         app:layout_constraintTop_toTopOf="@+id/ivCaixab21"
         tools:layout_editor_absoluteX="135dp"
@@ -114,8 +112,8 @@
         android:id="@+id/ivMetallica2"
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:layout_marginTop="6dp"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="6dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/ivCaixab21"
         app:srcCompat="@drawable/metallica2"
@@ -129,8 +127,8 @@
         android:layout_marginTop="32dp"
         android:text="6:58 m"
         android:textColor="@color/black"
-        app:layout_constraintTop_toTopOf="@id/ivCaixab21"
-        app:layout_constraintEnd_toEndOf="@id/ivPlayBar" />
+        app:layout_constraintEnd_toEndOf="@id/ivPlayBar"
+        app:layout_constraintTop_toTopOf="@id/ivCaixab21" />
 
     <ImageView
         android:id="@+id/ivCaixab31"
@@ -145,10 +143,10 @@
         android:id="@+id/ivLinkin"
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:layout_marginTop="6dp"
         android:layout_marginStart="32dp"
-        app:layout_constraintTop_toTopOf="@+id/ivCaixab31"
+        android:layout_marginTop="6dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivCaixab31"
         app:srcCompat="@drawable/linkinpark"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="95dp" />
@@ -161,7 +159,7 @@
         android:layout_marginTop="16dp"
         android:text="In The End"
         android:textColor="@color/black"
-        android:fontFamily="serif"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@id/ivLinkin"
         app:layout_constraintTop_toTopOf="@+id/ivCaixab31"
         tools:layout_editor_absoluteX="135dp"
@@ -188,8 +186,8 @@
         android:layout_marginTop="32dp"
         android:text="3:39 m"
         android:textColor="@color/black"
-        app:layout_constraintTop_toTopOf="@id/ivCaixab31"
-        app:layout_constraintEnd_toEndOf="@id/ivPlayBar" />
+        app:layout_constraintEnd_toEndOf="@id/ivPlayBar"
+        app:layout_constraintTop_toTopOf="@id/ivCaixab31" />
 
     <ImageView
         android:id="@+id/ivCaixab41"
@@ -204,8 +202,8 @@
         android:id="@+id/ivAkon"
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:layout_marginTop="6dp"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="6dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/ivCaixab41"
         app:srcCompat="@drawable/akon"
@@ -220,7 +218,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/what_you_got"
         android:textColor="@color/black"
-        android:fontFamily="serif"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@id/ivAkon"
         app:layout_constraintTop_toTopOf="@+id/ivCaixab41"
         tools:layout_editor_absoluteX="135dp"
@@ -247,61 +245,61 @@
         android:layout_marginTop="32dp"
         android:text="3:54 m"
         android:textColor="@color/black"
-        app:layout_constraintTop_toTopOf="@id/ivCaixab41"
-        app:layout_constraintEnd_toEndOf="@id/ivPlayBar" />
+        app:layout_constraintEnd_toEndOf="@id/ivPlayBar"
+        app:layout_constraintTop_toTopOf="@id/ivCaixab41" />
 
     <ImageView
         android:id="@+id/ivFoot"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
+        android:src="@drawable/menuinferior"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/menuinferior" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/ibHome"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="6dp"
         android:layout_marginStart="32dp"
-        app:layout_constraintTop_toTopOf="@+id/ivFoot"
-        app:layout_constraintStart_toStartOf="@id/ivFoot"
+        android:layout_marginTop="6dp"
         android:backgroundTint="@color/grey_18"
+        app:layout_constraintStart_toStartOf="@id/ivFoot"
+        app:layout_constraintTop_toTopOf="@+id/ivFoot"
         app:srcCompat="@drawable/home1" />
 
     <ImageButton
         android:id="@+id/ibLupaFoot"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="6dp"
         android:layout_marginStart="48dp"
+        android:layout_marginTop="6dp"
         android:backgroundTint="@color/grey_18"
-        app:layout_constraintTop_toTopOf="@+id/ivFoot"
         app:layout_constraintStart_toEndOf="@id/ibHome"
+        app:layout_constraintTop_toTopOf="@+id/ivFoot"
         app:srcCompat="@drawable/lupa2" />
 
     <ImageButton
         android:id="@+id/ibCoracao"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="6dp"
         android:layout_marginStart="48dp"
+        android:layout_marginTop="6dp"
         android:backgroundTint="@color/grey_18"
-        app:layout_constraintTop_toTopOf="@+id/ivFoot"
         app:layout_constraintStart_toEndOf="@id/ibLupaFoot"
+        app:layout_constraintTop_toTopOf="@+id/ivFoot"
         app:srcCompat="@drawable/coracao1" />
 
     <ImageButton
         android:id="@+id/ibPerfil"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginStart="45dp"
         android:layout_marginTop="6dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginStart="45dp"
         android:backgroundTint="@color/grey_18"
-        app:layout_constraintTop_toTopOf="@+id/ivFoot"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/perfil1"/>
+        app:layout_constraintTop_toTopOf="@+id/ivFoot"
+        app:srcCompat="@drawable/perfil1" />
 
 
     <ImageButton
@@ -320,8 +318,8 @@
         android:id="@+id/ibRewind"
         android:layout_width="55dp"
         android:layout_height="49dp"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/ivBackPlayPause"
@@ -375,8 +373,8 @@
         android:layout_marginTop="8dp"
         android:text="5:31"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/ivPlayBar"
-        app:layout_constraintEnd_toEndOf="@id/ivPlayBar" />
+        app:layout_constraintEnd_toEndOf="@id/ivPlayBar"
+        app:layout_constraintTop_toBottomOf="@id/ivPlayBar" />
 
     <ImageButton
         android:id="@+id/ibVolumeOn"
@@ -402,8 +400,8 @@
         android:id="@+id/ibRepeat"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:background="@color/white"
         android:layout_marginStart="33dp"
+        android:background="@color/white"
         app:layout_constraintStart_toEndOf="@+id/ibShuffle"
         app:layout_constraintTop_toTopOf="@+id/ibShuffle"
         app:srcCompat="@drawable/ic_baseline_repeat_24" />
@@ -412,8 +410,8 @@
         android:id="@+id/imageButton3"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:backgroundTint="@color/white"
         android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/tvMinuteMax"
         app:layout_constraintTop_toTopOf="@+id/ibRepeat"
         app:srcCompat="@drawable/ic_baseline_add_24" />

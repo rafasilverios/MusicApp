@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilActivity">
+
+    <ImageButton
+        android:id="@+id/ibBack5"
+        android:layout_width="16dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_conta"
+        app:srcCompat="@drawable/backb" />
+
+    <TextView
+        android:id="@+id/tv_conta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:text="Conta"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/ibBack5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_mostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="32dp"
+        android:text="Mostrar Dados do Titular da Conta"
+        android:textSize="18sp"
+        android:textColor="@color/intense_grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_conta" />
+
+    <ImageButton
+        android:id="@+id/ib_mostrar"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/tv_mostrar"
+        app:layout_constraintTop_toTopOf="@+id/tv_mostrar"
+        app:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+    <TextView
+        android:id="@+id/tv_informacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/tv_mostrar"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mostrar" />
+
+    <TextView
+        android:id="@+id/tv_assinatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Assinatura"
+        android:textColor="@color/pink"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_mostrar"
+        app:layout_constraintTop_toBottomOf="@+id/tv_informacao" />
+
+    <TextView
+        android:id="@+id/tv_avaliar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avaliar Gratis"
+        android:textColor="@color/intense_grey"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_assinatura"
+        app:layout_constraintTop_toBottomOf="@+id/tv_assinatura" />
+
+    <TextView
+        android:id="@+id/tv_notificacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Notificação"
+        android:textColor="@color/pink"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_avaliar"
+        app:layout_constraintTop_toBottomOf="@+id/tv_avaliar" />
+
+    <TextView
+        android:id="@+id/tv_texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="8dp"
+        android:text="O MusicApp associa a sua visualização de notificações e dados de interação ao seu E-mail."
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_notificacao" />
+
+    <TextView
+        android:id="@+id/tv_gerenciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Gerenciar Notificações"
+        android:textColor="@color/intense_grey"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_texto"
+        app:layout_constraintTop_toBottomOf="@+id/tv_texto" />
+
+    <TextView
+        android:id="@+id/tv_finalizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="32dp"
+        android:text="Finalizar Sessão"
+        android:textColor="@color/intense_grey"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
