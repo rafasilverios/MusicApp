@@ -21,3 +21,9 @@ São apenas implementações visuais para testar o que estou aprendendo em Andro
 - Aperfeiçoamento do layout das telas de login e de perfil;
 - Na tela de perfil, quando pressionado o botão para mostrar dados do usuário, há alteração do botão, alternando entre flecha para cima e flecha para baixo;
 - Na tela de perfil, quando pressionado o botão para mostrar dados do usuário (flecha para baixo), agora é possível ocultar os dados pressionando o botão novamente (flecha para cima).
+#
+
+### ATUALIZAÇÃO 3 (26/05/2022):
+- Havia uma barra de navegação na parte inferior que era apenas visual e nãoo era funcional. A partir dessa atualização, agora a barra de navegação passa a ser uma BottomNavigation;
+- Utilizado BottomNavigationView para navegação entre Activities;
+- Foram criadas mais duas telas, de favoritos e de pesquisa, que serão finalizadas em breve.
