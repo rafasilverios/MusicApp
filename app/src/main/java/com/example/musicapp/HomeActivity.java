@@ -60,13 +60,5 @@ public class HomeActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-        /*binding.ibPerfil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent2 = new Intent(getApplicationContext(), PerfilActivity.class);
-                startActivity(intent2);
-            }
-        });*/
     }
 }

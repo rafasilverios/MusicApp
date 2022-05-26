@@ -378,11 +378,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:background="?android:attr/windowBackground"
-            app:menu="@menu/bottom_nav_menu"
+            android:background="@color/white"
             app:itemIconSize="30dp"
+            app:itemIconTint="@drawable/item_selector"
             app:labelVisibilityMode="unlabeled"
-            app:itemIconTint="@drawable/item_selector">
+            app:menu="@menu/bottom_nav_menu">
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
