@@ -5,12 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+
     <ImageView
         android:id="@+id/ivMetallicaTransp"
-        android:layout_width="415dp"
-        android:layout_height="415dp"
+        android:layout_width="416dp"
+        android:layout_height="416dp"
+        android:layout_marginTop="-4dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/metallicagt" />
 
     <TextView
@@ -33,7 +37,7 @@
         android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/tvNowPlaying"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_new_24" />
+        app:srcCompat="@drawable/ic_white_arrow_back_ios"/>
 
     <TextView
         android:id="@+id/tvEnter2"
@@ -248,59 +252,6 @@
         app:layout_constraintEnd_toEndOf="@id/ivPlayBar"
         app:layout_constraintTop_toTopOf="@id/ivCaixab41" />
 
-    <ImageView
-        android:id="@+id/ivFoot"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:src="@drawable/menuinferior"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageButton
-        android:id="@+id/ibHome"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="6dp"
-        android:backgroundTint="@color/grey_18"
-        app:layout_constraintStart_toStartOf="@id/ivFoot"
-        app:layout_constraintTop_toTopOf="@+id/ivFoot"
-        app:srcCompat="@drawable/home1" />
-
-    <ImageButton
-        android:id="@+id/ibLupaFoot"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="6dp"
-        android:backgroundTint="@color/grey_18"
-        app:layout_constraintStart_toEndOf="@id/ibHome"
-        app:layout_constraintTop_toTopOf="@+id/ivFoot"
-        app:srcCompat="@drawable/lupa2" />
-
-    <ImageButton
-        android:id="@+id/ibCoracao"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="6dp"
-        android:backgroundTint="@color/grey_18"
-        app:layout_constraintStart_toEndOf="@id/ibLupaFoot"
-        app:layout_constraintTop_toTopOf="@+id/ivFoot"
-        app:srcCompat="@drawable/coracao1" />
-
-    <ImageButton
-        android:id="@+id/ibPerfil"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="32dp"
-        android:backgroundTint="@color/grey_18"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/ivFoot"
-        app:srcCompat="@drawable/perfil1" />
-
 
     <ImageButton
         android:id="@+id/ibFoward"
@@ -415,6 +366,27 @@
         app:layout_constraintEnd_toStartOf="@+id/tvMinuteMax"
         app:layout_constraintTop_toTopOf="@+id/ibRepeat"
         app:srcCompat="@drawable/ic_baseline_add_24" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/boottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/bottom_nav_menu"
+            app:itemIconSize="30dp"
+            app:labelVisibilityMode="unlabeled"
+            app:itemIconTint="@drawable/item_selector">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

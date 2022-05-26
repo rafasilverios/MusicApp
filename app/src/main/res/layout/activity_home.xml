@@ -4,13 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/tvViewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/view_all_80_item"
+        android:textColor="@color/pink"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/ivCaixab4"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="32dp"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/boottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/bottom_nav_menu"
+            app:itemIconSize="30dp"
+            app:labelVisibilityMode="unlabeled"
+            app:itemIconTint="@drawable/item_selector">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/tvMusic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="64dp"
         android:text="@string/music"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -18,36 +52,13 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/ibBack"
-        android:layout_width="16dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="32dp"
-        android:backgroundTint="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvMusic"
-        app:srcCompat="@drawable/backb" />
-
-    <ImageButton
-        android:id="@+id/ibQuad"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
-        android:layout_marginEnd="32dp"
-        android:backgroundTint="@color/white"
-        android:contentDescription="@string/todo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvMusic"
-        app:srcCompat="@drawable/quad"
-        tools:layout_editor_absoluteX="349dp"
-        tools:layout_editor_absoluteY="34dp" />
-
     <ImageView
         android:id="@+id/ivSearch"
         android:layout_width="330dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="@id/ibQuad"
-        app:layout_constraintStart_toStartOf="@+id/ibBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvMusic"
         app:srcCompat="@drawable/search" />
 
@@ -83,9 +94,11 @@
         android:layout_marginTop="16dp"
         android:text="@string/all"
         android:textColor="@color/pink"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="32dp"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@id/ibBack"
-        app:layout_constraintTop_toBottomOf="@id/ivSearch" />
+        app:layout_constraintTop_toBottomOf="@id/ivSearch"
+        tools:layout_editor_absoluteX="32dp" />
 
     <TextView
         android:id="@+id/tvAlbum"
@@ -104,9 +117,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/favourite"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="32dp"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@id/ibQuad"
-        app:layout_constraintTop_toBottomOf="@id/ivSearch" />
+        app:layout_constraintTop_toBottomOf="@id/ivSearch"
+        tools:layout_editor_absoluteX="313dp" />
 
     <ImageView
         android:id="@+id/ivCaixab1"
@@ -124,11 +139,11 @@
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="6dp"
-        app:layout_constraintStart_toStartOf="@+id/ibBack"
         app:layout_constraintTop_toTopOf="@+id/ivCaixab1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="32dp"
         app:srcCompat="@drawable/coldplay"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="95dp" />
+        tools:layout_editor_absoluteX="32dp" />
 
     <TextView
         android:id="@+id/tvColdPlay"
@@ -176,11 +191,11 @@
         android:layout_height="30dp"
         android:layout_marginTop="25dp"
         android:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/ibQuad"
         app:layout_constraintTop_toTopOf="@+id/ivCaixab1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="32dp"
         app:srcCompat="@drawable/pontos1"
-        tools:layout_editor_absoluteX="329dp"
-        tools:layout_editor_absoluteY="236dp" />
+        tools:layout_editor_absoluteX="359dp" />
 
     <ImageView
         android:id="@+id/ivCaixar"
@@ -209,11 +224,11 @@
         android:layout_height="30dp"
         android:layout_marginTop="25dp"
         android:backgroundTint="@color/salmao"
-        app:layout_constraintEnd_toEndOf="@+id/ibQuad"
         app:layout_constraintTop_toTopOf="@+id/ivCaixar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="32dp"
         app:srcCompat="@drawable/pontos1"
-        tools:layout_editor_absoluteX="329dp"
-        tools:layout_editor_absoluteY="236dp" />
+        tools:layout_editor_absoluteX="359dp" />
 
     <TextView
         android:id="@+id/tvEnter"
@@ -247,11 +262,11 @@
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="6dp"
-        app:layout_constraintStart_toStartOf="@+id/ibBack"
         app:layout_constraintTop_toTopOf="@+id/ivCaixar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="32dp"
         app:srcCompat="@drawable/metallica"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="95dp" />
+        tools:layout_editor_absoluteX="32dp" />
 
     <ImageView
         android:id="@+id/ivCaixab2"
@@ -280,11 +295,11 @@
         android:layout_height="30dp"
         android:layout_marginTop="25dp"
         android:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/ibQuad"
         app:layout_constraintTop_toTopOf="@+id/ivCaixab2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="32dp"
         app:srcCompat="@drawable/pontos1"
-        tools:layout_editor_absoluteX="329dp"
-        tools:layout_editor_absoluteY="236dp" />
+        tools:layout_editor_absoluteX="359dp" />
 
     <TextView
         android:id="@+id/tvFade"
@@ -318,11 +333,11 @@
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="6dp"
-        app:layout_constraintStart_toStartOf="@+id/ibBack"
         app:layout_constraintTop_toTopOf="@+id/ivCaixab2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="32dp"
         app:srcCompat="@drawable/metallica2"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="95dp" />
+        tools:layout_editor_absoluteX="32dp" />
 
     <ImageView
         android:id="@+id/ivCaixab3"
@@ -338,11 +353,11 @@
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="6dp"
-        app:layout_constraintStart_toStartOf="@+id/ibBack"
         app:layout_constraintTop_toTopOf="@+id/ivCaixab3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="32dp"
         app:srcCompat="@drawable/linkinpark"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="95dp" />
+        tools:layout_editor_absoluteX="32dp" />
 
     <ImageButton
         android:id="@+id/ibPlay4"
@@ -363,11 +378,11 @@
         android:layout_height="30dp"
         android:layout_marginTop="25dp"
         android:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/ibQuad"
         app:layout_constraintTop_toTopOf="@+id/ivCaixab3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="32dp"
         app:srcCompat="@drawable/pontos1"
-        tools:layout_editor_absoluteX="329dp"
-        tools:layout_editor_absoluteY="236dp" />
+        tools:layout_editor_absoluteX="359dp" />
 
     <TextView
         android:id="@+id/tvInTheEnd"
@@ -410,11 +425,11 @@
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="6dp"
-        app:layout_constraintStart_toStartOf="@+id/ibBack"
         app:layout_constraintTop_toTopOf="@+id/ivCaixab4"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="32dp"
         app:srcCompat="@drawable/akon"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="95dp" />
+        tools:layout_editor_absoluteX="32dp" />
 
     <ImageButton
         android:id="@+id/ibPlay5"
@@ -435,11 +450,11 @@
         android:layout_height="30dp"
         android:layout_marginTop="25dp"
         android:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/ibQuad"
         app:layout_constraintTop_toTopOf="@+id/ivCaixab4"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="32dp"
         app:srcCompat="@drawable/pontos1"
-        tools:layout_editor_absoluteX="329dp"
-        tools:layout_editor_absoluteY="236dp" />
+        tools:layout_editor_absoluteX="359dp" />
 
     <TextView
         android:id="@+id/tvWhatYouGot"
@@ -468,18 +483,9 @@
         tools:layout_editor_absoluteX="135dp"
         tools:layout_editor_absoluteY="253dp" />
 
-    <TextView
-        android:id="@+id/tvViewAll"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/view_all_80_item"
-        android:textColor="@color/pink"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@id/ibBack"
-        app:layout_constraintTop_toBottomOf="@id/ivCaixab4" />
 
-    <ImageView
+
+    <!--<ImageView
         android:id="@+id/ivFoot"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
@@ -539,7 +545,7 @@
         app:layout_constraintTop_toTopOf="@+id/ivFoot"
         app:srcCompat="@drawable/perfil1"
         tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="446dp" />
+        tools:layout_editor_absoluteY="446dp" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

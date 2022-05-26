@@ -4,12 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/drawable/ic__arrow_drop_down.xml" value="0.293" />
+        <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/drawable/item_selector.xml" value="0.3025" />
         <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_apresenta_dados.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_favorite.xml" value="0.176" />
+        <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_home.xml" value="0.2354515050167224" />
         <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_lista_musicas.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_main.xml" value="0.136" />
-        <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_now_playing.xml" value="0.2354515050167224" />
-        <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_perfil.xml" value="0.2354515050167224" />
+        <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_main.xml" value="0.23783783783783785" />
+        <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_manu.xml" value="0.275" />
+        <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_now_playing.xml" value="0.23783783783783785" />
+        <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_perfil.xml" value="0.23783783783783785" />
         <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_pessoa.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_search.xml" value="0.23783783783783785" />
         <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_tela_login.xml" value="0.136" />
         <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_tela_pesquisa.xml" value="0.23783783783783785" />
         <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/layout/item_filme.xml" value="0.36666666666666664" />
@@ -17,6 +22,8 @@
         <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/layout/lista_musicas.xml" value="0.365625" />
         <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/layout/now_playing.xml" value="0.23783783783783785" />
         <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/layout/row_musicas_list.xml" value="0.2" />
+        <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.365625" />
+        <entry key="..\:/Users/rsilverio/AndroidStudioProjects/MusicApp/app/src/main/res/menu/teste_menu.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

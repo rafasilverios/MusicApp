@@ -1,21 +1,27 @@
 package com.example.musicapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
 import com.example.musicapp.databinding.ActivityNowPlayingBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class NowPlaying extends AppCompatActivity {
 
+    BottomNavigationView bottomNavigationView;
     private ActivityNowPlayingBinding binding;
     private int cont = 1;
     private int cont2 = 1;
     private int cont3 = 1;
     private int cont4 = 1;
+    private int cont6 = 1;
+    private int cont7 = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +33,7 @@ public class NowPlaying extends AppCompatActivity {
 
         ImageButton ibBack2 = findViewById(R.id.ibBack2);
         ibBack2.setOnClickListener(view1 -> {
-            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
             startActivity(intent);
         });
 
@@ -83,9 +89,66 @@ public class NowPlaying extends AppCompatActivity {
             }
         });
 
-        binding.ibFoward.setOnClickListener(view1 -> binding.tvEnter2.setText("Sad But True"));
+        binding.ibFoward.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (cont6 == 1) {
+                    binding.tvEnter2.setText("Sad But True");
+                    binding.ivMetallicaTransp.setImageResource(R.drawable.metallica23);
+                    cont6 = 0;
+                }else {
+                    binding.tvEnter2.setText("Enter Sandman");
+                    binding.ivMetallicaTransp.setImageResource(R.drawable.metallicagt);
+                    cont6 = 1;
+                }
+            }
+        });
 
-        binding.ibRewind.setOnClickListener(view2 -> binding.tvEnter2.setText("Enter Sandman"));
+
+        binding.ibRewind.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (cont7 == 1) {
+                    binding.tvEnter2.setText("Enter Sandman");
+                    binding.ivMetallicaTransp.setImageResource(R.drawable.metallicagt);
+                    cont7 = 0;
+                }else {
+                    binding.tvEnter2.setText("Sad But True");
+                    binding.ivMetallicaTransp.setImageResource(R.drawable.metallica23);
+                    cont7 = 1;
+                }
+            }
+        });
+
+        bottomNavigationView = findViewById(R.id.boottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.ic_home);
+
+        bottomNavigationView.setOnItemSelectedListener(new BottomNavigationView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                switch (item.getItemId()) {
+                    case R.id.ic_home:
+                        startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.ic_search:
+                        startActivity(new Intent(getApplicationContext(), SearchActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.ic_favorite:
+                        startActivity(new Intent(getApplicationContext(), FavoriteActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.ic_profile:
+                        startActivity(new Intent(getApplicationContext(), PerfilActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                }
+
+                return false;
+            }
+        });
 
 
     }
