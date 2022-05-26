@@ -8,11 +8,16 @@ São apenas implementações visuais para testar o que estou aprendendo em Andro
 #
 
 ### ATUALIZAÇÃO 1 (18/05/2022):
-- Implementação de Shared Preference para armazenar alguns dados em cache.
-- Foi criada uma tela de cadastro para gravar os dados e uma tela de perfil para apresentar os dados cadastrados (Obs.: A senha não será armazenada, pois este não é um metodo de armazenamento seguro). 
+- Implementação de Shared Preference para armazenar alguns dados em cache;
+- Foi criada uma tela de cadastro para gravar os dados e uma tela de perfil para apresentar os dados cadastrados (Obs.: A senha não será armazenada, pois este não é um metodo de armazenamento seguro).
 ##### PASSO A PASSO PARA TESTE: 
 - Acesse o App e informe os dados solicitados e pressione o botão "cadastrar";
 - Na tela principal, clique no icone de perfil (canto inferior direito);
 - Na tela de perfil, ao lado do texto, clique na flecha para baixo;
 - Pronto!, os dados informados serão apresentado em tela. 
+#
 
+### ATUALIZAÇÃO 2 (25/05/2022):
+- Aperfeiçoamento do layout das telas de login e de perfil;
+- Na tela de perfil, quando pressionado o botão para mostrar dados do usuário, há alteração do botão, alternando entre flecha para cima e flecha para baixo;
+- Na tela de perfil, quando pressionado o botão para mostrar dados do usuário (flecha para baixo), agora é possível ocultar os dados pressionando o botão novamente (flecha para cima).
