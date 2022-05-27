@@ -1,4 +1,4 @@
-package com.example.musicapp;
+package com.example.musicapp.recyclerview;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +9,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.musicapp.FavoriteActivity;
+import com.example.musicapp.HomeActivity;
+import com.example.musicapp.sharedpref.PerfilActivity;
+import com.example.musicapp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
@@ -17,7 +21,7 @@ import java.util.List;
 public class SearchActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private List<Filme> listaFilmes = new ArrayList<>();
+    private List<Musica> listaMusicas = new ArrayList<>();
     BottomNavigationView bottomNavigationView;
 
     @Override
@@ -28,11 +32,11 @@ public class SearchActivity extends AppCompatActivity {
         //********  início RecyclerView  ********
         recyclerView = findViewById(R.id.recyclerView);
 
-        //listagem de Filmes
-        this.criarFilmes();
+        //listagem de Musicas
+        this.criarMusicas();
 
         //configurar adapter
-        adapter adapter = new adapter(listaFilmes);
+        adapter adapter = new adapter(listaMusicas);
 
 
         //configurar recyclerView
@@ -74,37 +78,37 @@ public class SearchActivity extends AppCompatActivity {
         });
     }
 
-    public void criarFilmes() {
+    public void criarMusicas() {
 
-        Filme filme = new Filme("Enter Sandman", "Metallica", "5:31 m", R.drawable.enter_sandman);
-        listaFilmes.add(filme);
+        Musica musica = new Musica("Enter Sandman", "Metallica", "5:31 m", R.drawable.enter_sandman);
+        listaMusicas.add(musica);
 
-        filme = new Filme("Rise Today", "Alter Bridge", "4:21 m", R.drawable.rise_to_day);
-        listaFilmes.add(filme);
+        musica = new Musica("Rise Today", "Alter Bridge", "4:21 m", R.drawable.rise_to_day);
+        listaMusicas.add(musica);
 
-        filme = new Filme("In the End", "Linkin Park", "3:39 m", R.drawable.in_the_end);
-        listaFilmes.add(filme);
+        musica = new Musica("In the End", "Linkin Park", "3:39 m", R.drawable.in_the_end);
+        listaMusicas.add(musica);
 
-        filme = new Filme("Thunderstruck", "AC/DC", "4:53 m", R.drawable.thunderstruck);
-        listaFilmes.add(filme);
+        musica = new Musica("Thunderstruck", "AC/DC", "4:53 m", R.drawable.thunderstruck);
+        listaMusicas.add(musica);
 
-        filme = new Filme("Yellow", "Cold Play", "4:33 m", R.drawable.yellow);
-        listaFilmes.add(filme);
+        musica = new Musica("Yellow", "Cold Play", "4:33 m", R.drawable.yellow);
+        listaMusicas.add(musica);
 
-        filme = new Filme("Somewhere I Belong", "Linkin Park", "3:45 m", R.drawable.somewhere_i_belong);
-        listaFilmes.add(filme);
+        musica = new Musica("Somewhere I Belong", "Linkin Park", "3:45 m", R.drawable.somewhere_i_belong);
+        listaMusicas.add(musica);
 
-        filme = new Filme("Rock And Roll All Nite", "Kiss", "4:02 m", R.drawable.rock_and_roll_all_night);
-        listaFilmes.add(filme);
+        musica = new Musica("Rock And Roll All Nite", "Kiss", "4:02 m", R.drawable.rock_and_roll_all_night);
+        listaMusicas.add(musica);
 
-        filme = new Filme("Fade to Black", "Metallica", "6:58 m", R.drawable.fade_to_black);
-        listaFilmes.add(filme);
+        musica = new Musica("Fade to Black", "Metallica", "6:58 m", R.drawable.fade_to_black);
+        listaMusicas.add(musica);
 
-        filme = new Filme("Forever", "Kiss", "3:51 m", R.drawable.forever);
-        listaFilmes.add(filme);
+        musica = new Musica("Forever", "Kiss", "3:51 m", R.drawable.forever);
+        listaMusicas.add(musica);
 
-        filme = new Filme("Back In Black", "AC/DC", "4:14 m", R.drawable.back_in_black);
-        listaFilmes.add(filme);
+        musica = new Musica("Back In Black", "AC/DC", "4:14 m", R.drawable.back_in_black);
+        listaMusicas.add(musica);
 
     }
 

@@ -1,4 +1,4 @@
-package com.example.musicapp;
+package com.example.musicapp.sharedpref;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,7 +9,11 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.musicapp.FavoriteActivity;
+import com.example.musicapp.HomeActivity;
+import com.example.musicapp.R;
 import com.example.musicapp.databinding.ActivityPerfilBinding;
+import com.example.musicapp.recyclerview.SearchActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class PerfilActivity extends AppCompatActivity {
@@ -59,7 +63,7 @@ public class PerfilActivity extends AppCompatActivity {
         binding.tvFinalizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(getApplicationContext(), TelaLogin.class);
+                Intent intent2 = new Intent(getApplicationContext(), TelaCadastro.class);
                 startActivity(intent2);
             }
         });

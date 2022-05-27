@@ -1,4 +1,4 @@
-package com.example.musicapp;
+package com.example.musicapp.recyclerview;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,14 +9,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.musicapp.R;
+
 import java.util.List;
 
 public class adapter extends RecyclerView.Adapter<adapter.MyViewHolder> {
 
-    private List<Filme> listaFilmes;
+    private List<Musica> listaMusicas;
 
-    public  adapter(List<Filme> lista) {
-        this.listaFilmes = lista;
+    public  adapter(List<Musica> lista) {
+        this.listaMusicas = lista;
     }
 
     @NonNull
@@ -31,31 +33,31 @@ public class adapter extends RecyclerView.Adapter<adapter.MyViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        Filme filme = listaFilmes.get(position);
-        holder.titulo.setText(filme.getTituloFilme());
-        holder.genero.setText(filme.getGenero());
-        holder.ano.setText(filme.getAno());
-        holder.foto.setImageResource(filme.getFoto());
+        Musica musica = listaMusicas.get(position);
+        holder.musica.setText(musica.getTituloMusica());
+        holder.banda.setText(musica.getBanda());
+        holder.tempo.setText(musica.getTempo());
+        holder.foto.setImageResource(musica.getFoto());
     }
 
     @Override
     public int getItemCount() {
-        return listaFilmes.size();
+        return listaMusicas.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView titulo;
-        TextView ano;
-        TextView genero;
+        TextView musica;
+        TextView tempo;
+        TextView banda;
         ImageView foto;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            titulo = itemView.findViewById(R.id.textTitulo);
-            ano = itemView.findViewById(R.id.textAno);
-            genero = itemView.findViewById(R.id.textGenero);
+            musica = itemView.findViewById(R.id.textTitulo);
+            tempo = itemView.findViewById(R.id.textAno);
+            banda = itemView.findViewById(R.id.textGenero);
             foto = itemView.findViewById(R.id.iv_capa);
 
         }

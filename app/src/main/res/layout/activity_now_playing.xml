@@ -76,7 +76,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/fundonp" />
 
-    <ImageView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="58dp"
+        android:layout_marginTop="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_plus" />
+
+    <!--<ImageView
         android:id="@+id/ivCaixab21"
         android:layout_width="wrap_content"
         android:layout_height="78dp"
@@ -250,7 +261,7 @@
         android:text="3:54 m"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@id/ivPlayBar"
-        app:layout_constraintTop_toTopOf="@id/ivCaixab41" />
+        app:layout_constraintTop_toTopOf="@id/ivCaixab41" />-->
 
 
     <ImageButton
@@ -358,7 +369,7 @@
         app:srcCompat="@drawable/ic_baseline_repeat_24" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/ib_plus"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginEnd="32dp"

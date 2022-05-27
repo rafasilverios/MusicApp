@@ -26,10 +26,11 @@
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
+
   </RelativeLayout>
 
   <TextView
-      android:id="@+id/tvMusic"
+      android:id="@+id/tvFavoritos"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginTop="64dp"
@@ -39,5 +40,315 @@
       app:layout_constraintLeft_toLeftOf="parent"
       app:layout_constraintRight_toRightOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/tv_seusFavoritos"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32dp"
+      android:layout_marginStart="32dp"
+      android:text="Seus Favoritos"
+      android:textSize="15sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvFavoritos" />
+
+  <ImageView
+      android:id="@+id/ivCaixab1"
+      android:layout_width="wrap_content"
+      android:layout_height="78dp"
+      android:layout_marginTop="32dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv_seusFavoritos"
+      app:srcCompat="@drawable/caixab" />
+
+  <ImageView
+      android:id="@+id/ivCold"
+      android:layout_width="65dp"
+      android:layout_height="65dp"
+      android:layout_marginTop="6dp"
+      app:layout_constraintTop_toTopOf="@+id/ivCaixab1"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginStart="32dp"
+      app:srcCompat="@drawable/coldplay"
+      tools:layout_editor_absoluteX="32dp" />
+
+  <TextView
+      android:id="@+id/tvColdPlay"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:text="@string/coldplay_awarded_song"
+      android:textColor="@color/black"
+      app:layout_constraintStart_toEndOf="@id/ivCold"
+      app:layout_constraintTop_toTopOf="@+id/ivCaixab1"
+      tools:layout_editor_absoluteX="135dp"
+      tools:layout_editor_absoluteY="253dp" />
+
+  <TextView
+      android:id="@+id/tvJohn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="5dp"
+      android:text="@string/john_doe"
+      android:textColor="@color/black"
+      android:textSize="13sp"
+      app:layout_constraintStart_toEndOf="@id/ivCold"
+      app:layout_constraintTop_toBottomOf="@+id/tvColdPlay"
+      tools:layout_editor_absoluteX="135dp"
+      tools:layout_editor_absoluteY="253dp" />
+
+
+  <ImageView
+      android:id="@+id/iv_coracao"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:layout_marginEnd="32dp"
+      app:layout_constraintEnd_toEndOf="@+id/ivCaixab1"
+      app:layout_constraintTop_toTopOf="@+id/ivCaixab1"
+      app:srcCompat="@drawable/ic_baseline_favorite_24" />
+
+  <ImageView
+      android:id="@+id/ivCaixar"
+      android:layout_width="wrap_content"
+      android:layout_height="80dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/ivCaixab1"
+      app:srcCompat="@drawable/caixab" />
+
+  <TextView
+      android:id="@+id/tvEnter"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:text="@string/enter_sandman"
+      android:textColor="@color/black"
+      app:layout_constraintStart_toEndOf="@id/ivMetallica"
+      app:layout_constraintTop_toTopOf="@+id/ivCaixar"
+      tools:layout_editor_absoluteX="135dp"
+      tools:layout_editor_absoluteY="253dp" />
+
+  <TextView
+      android:id="@+id/tvMetallica"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="5dp"
+      android:text="@string/metallica"
+      android:textColor="@color/black"
+      android:textSize="13sp"
+      app:layout_constraintStart_toEndOf="@id/ivMetallica"
+      app:layout_constraintTop_toBottomOf="@+id/tvEnter"
+      tools:layout_editor_absoluteX="135dp"
+      tools:layout_editor_absoluteY="253dp" />
+
+  <ImageView
+      android:id="@+id/iv_coracao2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:layout_marginEnd="32dp"
+      app:layout_constraintEnd_toEndOf="@+id/ivCaixab1"
+      app:layout_constraintTop_toBottomOf="@+id/ivCaixab1"
+      app:srcCompat="@drawable/ic_baseline_favorite_24" />
+
+  <ImageView
+      android:id="@+id/ivMetallica"
+      android:layout_width="65dp"
+      android:layout_height="65dp"
+      android:layout_marginTop="6dp"
+      app:layout_constraintTop_toTopOf="@+id/ivCaixar"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginStart="32dp"
+      app:srcCompat="@drawable/metallica"
+      tools:layout_editor_absoluteX="32dp" />
+
+  <ImageView
+      android:id="@+id/ivCaixab2"
+      android:layout_width="wrap_content"
+      android:layout_height="78dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/ivCaixar"
+      app:srcCompat="@drawable/caixab" />
+
+  <TextView
+      android:id="@+id/tvFade"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:text="@string/fade_to_black"
+      android:textColor="@color/black"
+      app:layout_constraintStart_toEndOf="@id/ivMetallica2"
+      app:layout_constraintTop_toTopOf="@+id/ivCaixab2"
+      tools:layout_editor_absoluteX="135dp"
+      tools:layout_editor_absoluteY="253dp" />
+
+  <TextView
+      android:id="@+id/tvMetallica2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="5dp"
+      android:text="@string/metallica"
+      android:textColor="@color/black"
+      android:textSize="13sp"
+      app:layout_constraintStart_toEndOf="@id/ivMetallica2"
+      app:layout_constraintTop_toBottomOf="@+id/tvFade"
+      tools:layout_editor_absoluteX="135dp"
+      tools:layout_editor_absoluteY="253dp" />
+
+  <ImageView
+      android:id="@+id/iv_coracao3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:layout_marginEnd="32dp"
+      app:layout_constraintEnd_toEndOf="@+id/ivCaixab1"
+      app:layout_constraintTop_toBottomOf="@+id/ivCaixar"
+      app:srcCompat="@drawable/ic_baseline_favorite_24" />
+
+  <ImageView
+      android:id="@+id/ivMetallica2"
+      android:layout_width="65dp"
+      android:layout_height="65dp"
+      android:layout_marginTop="6dp"
+      app:layout_constraintTop_toTopOf="@+id/ivCaixab2"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginStart="32dp"
+      app:srcCompat="@drawable/metallica2"
+      tools:layout_editor_absoluteX="32dp" />
+
+  <ImageView
+      android:id="@+id/ivCaixab3"
+      android:layout_width="wrap_content"
+      android:layout_height="78dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/ivCaixab2"
+      app:srcCompat="@drawable/caixab" />
+
+
+  <ImageView
+      android:id="@+id/ivLinkin"
+      android:layout_width="65dp"
+      android:layout_height="65dp"
+      android:layout_marginTop="6dp"
+      app:layout_constraintTop_toTopOf="@+id/ivCaixab3"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginStart="32dp"
+      app:srcCompat="@drawable/linkinpark"
+      tools:layout_editor_absoluteX="32dp" />
+
+  <TextView
+      android:id="@+id/tvInTheEnd"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"        android:fontFamily="serif"
+      android:text="In The End"
+      android:textColor="@color/black"
+      app:layout_constraintStart_toEndOf="@id/ivLinkin"
+      app:layout_constraintTop_toTopOf="@+id/ivCaixab3"
+      tools:layout_editor_absoluteX="135dp"
+      tools:layout_editor_absoluteY="253dp" />
+
+  <TextView
+      android:id="@+id/tvLinkinPark"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="5dp"
+      android:text="Linkin Park"
+      android:textColor="@color/black"
+      android:textSize="13sp"
+      app:layout_constraintStart_toEndOf="@id/ivLinkin"
+      app:layout_constraintTop_toBottomOf="@+id/tvInTheEnd"
+      tools:layout_editor_absoluteX="135dp"
+      tools:layout_editor_absoluteY="253dp" />
+
+  <ImageView
+      android:id="@+id/iv_coracao4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:layout_marginEnd="32dp"
+      app:layout_constraintEnd_toEndOf="@+id/ivCaixab1"
+      app:layout_constraintTop_toBottomOf="@+id/ivCaixab2"
+      app:srcCompat="@drawable/ic_baseline_favorite_24" />
+
+
+  <ImageView
+      android:id="@+id/ivCaixab4"
+      android:layout_width="wrap_content"
+      android:layout_height="78dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/ivCaixab3"
+      app:srcCompat="@drawable/caixab" />
+
+  <ImageView
+      android:id="@+id/ivAkon"
+      android:layout_width="65dp"
+      android:layout_height="65dp"
+      android:layout_marginTop="6dp"
+      app:layout_constraintTop_toTopOf="@+id/ivCaixab4"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginStart="32dp"
+      app:srcCompat="@drawable/akon"
+      tools:layout_editor_absoluteX="32dp" />
+
+  <TextView
+      android:id="@+id/tvWhatYouGot"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:text="@string/what_you_got"
+      android:textColor="@color/black"
+      app:layout_constraintStart_toEndOf="@id/ivAkon"
+      app:layout_constraintTop_toTopOf="@+id/ivCaixab4"
+      tools:layout_editor_absoluteX="135dp"
+      tools:layout_editor_absoluteY="253dp" />
+
+  <TextView
+      android:id="@+id/tvAkon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="5dp"
+      android:text="@string/akon"
+      android:textColor="@color/black"
+      android:textSize="13sp"
+      app:layout_constraintStart_toEndOf="@id/ivAkon"
+      app:layout_constraintTop_toBottomOf="@+id/tvWhatYouGot"
+      tools:layout_editor_absoluteX="135dp"
+      tools:layout_editor_absoluteY="253dp" />
+
+  <ImageView
+      android:id="@+id/iv_coracao5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:layout_marginEnd="32dp"
+      app:layout_constraintEnd_toEndOf="@+id/ivCaixab1"
+      app:layout_constraintTop_toBottomOf="@+id/ivCaixab3"
+      app:srcCompat="@drawable/ic_baseline_favorite_24" />
+
+  <TextView
+      android:id="@+id/tv_buacarMusicas"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="64dp"
+      android:text="Buscar Nova Musicas"
+      android:textColor="@color/pink"
+      android:textSize="15sp"
+      app:layout_constraintTop_toBottomOf="@id/ivCaixab4"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginStart="32dp"
+      tools:layout_editor_absoluteX="32dp" />
+
+
 
   </androidx.constraintlayout.widget.ConstraintLayout>

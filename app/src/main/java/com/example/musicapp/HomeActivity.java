@@ -3,14 +3,15 @@ package com.example.musicapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageButton;
 
 import com.example.musicapp.databinding.ActivityHomeBinding;
+import com.example.musicapp.recyclerview.NowPlaying;
+import com.example.musicapp.recyclerview.SearchActivity;
+import com.example.musicapp.sharedpref.PerfilActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomeActivity extends AppCompatActivity {

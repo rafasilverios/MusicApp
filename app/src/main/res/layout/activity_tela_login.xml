@@ -1,89 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<androidx.core.widget.NestedScrollView
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".TelaLogin">
-
-    <TextView
-        android:id="@+id/tvMusic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CADASTRO"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="215dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="Preencha os dados abaixo para efetuar o cadastro"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/edt_nome"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/edt_nome"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="200dp"
-        android:hint="Nome"
-        android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/tvMusic"
-        tools:layout_editor_absoluteX="100dp" />
+        android:layout_height="match_parent"
+        tools:context=".sharedpref.TelaCadastro">
 
-    <EditText
-        android:id="@+id/edt_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="32dp"
-        android:hint="E-mail"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_nome" />
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="LOGIN"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/edt_senha"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="32dp"
-        android:hint="Senha"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+        <TextView
+            android:id="@+id/tv_orientacao"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="125dp"
+            android:layout_marginBottom="32dp"
+            android:text="Informe seus dados  para efetuar o login"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
 
-    <Button
-        android:id="@+id/btn_entrar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="32dp"
-        android:backgroundTint="@color/pink"
-        android:text="Cadastrar"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_senha" />
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_margin="32dp"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_orientacao" />
+
+        <EditText
+            android:id="@+id/edt_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+
+        <Button
+            android:id="@+id/btn_entrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:backgroundTint="@color/pink"
+            android:text="Entrar"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_senha" />
+
+        <TextView
+            android:id="@+id/tv_semLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:text="Não possui cadastro? Clique aqui!"
+            android:textSize="12sp"
+            android:textColor="@color/intense_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_entrar" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.core.widget.NestedScrollView>
