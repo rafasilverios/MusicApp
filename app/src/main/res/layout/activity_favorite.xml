@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FavoriteActivity">
+    tools:context=".activity.FavoriteActivity">
 
   <RelativeLayout
       android:layout_width="match_parent"
@@ -34,7 +34,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginTop="64dp"
-      android:text="FAVORITOS"
+      android:text="@string/favoritos"
       android:textColor="@color/black"
       android:textSize="20sp"
       app:layout_constraintLeft_toLeftOf="parent"
@@ -47,7 +47,7 @@
       android:layout_height="wrap_content"
       android:layout_marginTop="32dp"
       android:layout_marginStart="32dp"
-      android:text="Seus Favoritos"
+      android:text="@string/seus_favoritos"
       android:textSize="15sp"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/tvFavoritos" />
@@ -59,7 +59,8 @@
       android:layout_marginTop="32dp"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/tv_seusFavoritos"
-      app:srcCompat="@drawable/caixab" />
+      app:srcCompat="@drawable/caixab"
+      tools:ignore="ContentDescription"/>
 
   <ImageView
       android:id="@+id/ivCold"
@@ -70,7 +71,8 @@
       app:layout_constraintStart_toStartOf="parent"
       android:layout_marginStart="32dp"
       app:srcCompat="@drawable/coldplay"
-      tools:layout_editor_absoluteX="32dp" />
+      tools:layout_editor_absoluteX="32dp"
+      tools:ignore="ContentDescription"/>
 
   <TextView
       android:id="@+id/tvColdPlay"
@@ -108,7 +110,8 @@
       android:layout_marginEnd="32dp"
       app:layout_constraintEnd_toEndOf="@+id/ivCaixab1"
       app:layout_constraintTop_toTopOf="@+id/ivCaixab1"
-      app:srcCompat="@drawable/ic_baseline_favorite_24" />
+      app:srcCompat="@drawable/ic_baseline_favorite_24"
+      tools:ignore="ContentDescription"/>
 
   <ImageView
       android:id="@+id/ivCaixar"
@@ -116,7 +119,8 @@
       android:layout_height="80dp"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/ivCaixab1"
-      app:srcCompat="@drawable/caixab" />
+      app:srcCompat="@drawable/caixab"
+      tools:ignore="ContentDescription"/>
 
   <TextView
       android:id="@+id/tvEnter"
@@ -153,7 +157,8 @@
       android:layout_marginEnd="32dp"
       app:layout_constraintEnd_toEndOf="@+id/ivCaixab1"
       app:layout_constraintTop_toBottomOf="@+id/ivCaixab1"
-      app:srcCompat="@drawable/ic_baseline_favorite_24" />
+      app:srcCompat="@drawable/ic_baseline_favorite_24"
+      tools:ignore="ContentDescription"/>
 
   <ImageView
       android:id="@+id/ivMetallica"
@@ -164,7 +169,8 @@
       app:layout_constraintStart_toStartOf="parent"
       android:layout_marginStart="32dp"
       app:srcCompat="@drawable/metallica"
-      tools:layout_editor_absoluteX="32dp" />
+      tools:layout_editor_absoluteX="32dp"
+      tools:ignore="ContentDescription"/>
 
   <ImageView
       android:id="@+id/ivCaixab2"
@@ -172,7 +178,8 @@
       android:layout_height="78dp"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/ivCaixar"
-      app:srcCompat="@drawable/caixab" />
+      app:srcCompat="@drawable/caixab"
+      tools:ignore="ContentDescription"/>
 
   <TextView
       android:id="@+id/tvFade"
@@ -209,7 +216,8 @@
       android:layout_marginEnd="32dp"
       app:layout_constraintEnd_toEndOf="@+id/ivCaixab1"
       app:layout_constraintTop_toBottomOf="@+id/ivCaixar"
-      app:srcCompat="@drawable/ic_baseline_favorite_24" />
+      app:srcCompat="@drawable/ic_baseline_favorite_24"
+      tools:ignore="ContentDescription"/>
 
   <ImageView
       android:id="@+id/ivMetallica2"
@@ -220,7 +228,8 @@
       app:layout_constraintStart_toStartOf="parent"
       android:layout_marginStart="32dp"
       app:srcCompat="@drawable/metallica2"
-      tools:layout_editor_absoluteX="32dp" />
+      tools:layout_editor_absoluteX="32dp"
+      tools:ignore="ContentDescription"/>
 
   <ImageView
       android:id="@+id/ivCaixab3"
@@ -228,7 +237,8 @@
       android:layout_height="78dp"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/ivCaixab2"
-      app:srcCompat="@drawable/caixab" />
+      app:srcCompat="@drawable/caixab"
+      tools:ignore="ContentDescription"/>
 
 
   <ImageView
@@ -240,15 +250,16 @@
       app:layout_constraintStart_toStartOf="parent"
       android:layout_marginStart="32dp"
       app:srcCompat="@drawable/linkinpark"
-      tools:layout_editor_absoluteX="32dp" />
+      tools:layout_editor_absoluteX="32dp"
+      tools:ignore="ContentDescription"/>
 
   <TextView
       android:id="@+id/tvInTheEnd"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginStart="16dp"
-      android:layout_marginTop="16dp"        android:fontFamily="serif"
-      android:text="In The End"
+      android:layout_marginTop="16dp"
+      android:text="@string/in_the_end"
       android:textColor="@color/black"
       app:layout_constraintStart_toEndOf="@id/ivLinkin"
       app:layout_constraintTop_toTopOf="@+id/ivCaixab3"
@@ -261,7 +272,7 @@
       android:layout_height="wrap_content"
       android:layout_marginStart="16dp"
       android:layout_marginTop="5dp"
-      android:text="Linkin Park"
+      android:text="@string/linkin_park"
       android:textColor="@color/black"
       android:textSize="13sp"
       app:layout_constraintStart_toEndOf="@id/ivLinkin"
@@ -277,7 +288,8 @@
       android:layout_marginEnd="32dp"
       app:layout_constraintEnd_toEndOf="@+id/ivCaixab1"
       app:layout_constraintTop_toBottomOf="@+id/ivCaixab2"
-      app:srcCompat="@drawable/ic_baseline_favorite_24" />
+      app:srcCompat="@drawable/ic_baseline_favorite_24"
+      tools:ignore="ContentDescription"/>
 
 
   <ImageView
@@ -286,7 +298,8 @@
       android:layout_height="78dp"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/ivCaixab3"
-      app:srcCompat="@drawable/caixab" />
+      app:srcCompat="@drawable/caixab"
+      tools:ignore="ContentDescription"/>
 
   <ImageView
       android:id="@+id/ivAkon"
@@ -297,7 +310,8 @@
       app:layout_constraintStart_toStartOf="parent"
       android:layout_marginStart="32dp"
       app:srcCompat="@drawable/akon"
-      tools:layout_editor_absoluteX="32dp" />
+      tools:layout_editor_absoluteX="32dp"
+      tools:ignore="ContentDescription"/>
 
   <TextView
       android:id="@+id/tvWhatYouGot"
@@ -334,14 +348,15 @@
       android:layout_marginEnd="32dp"
       app:layout_constraintEnd_toEndOf="@+id/ivCaixab1"
       app:layout_constraintTop_toBottomOf="@+id/ivCaixab3"
-      app:srcCompat="@drawable/ic_baseline_favorite_24" />
+      app:srcCompat="@drawable/ic_baseline_favorite_24"
+      tools:ignore="ContentDescription"/>
 
   <TextView
       android:id="@+id/tv_buacarMusicas"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginTop="64dp"
-      android:text="Buscar Nova Musicas"
+      android:text="@string/buscar_nova_musicas"
       android:textColor="@color/pink"
       android:textSize="15sp"
       app:layout_constraintTop_toBottomOf="@id/ivCaixab4"

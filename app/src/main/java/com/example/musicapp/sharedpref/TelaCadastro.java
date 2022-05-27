@@ -8,8 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.musicapp.HomeActivity;
-import com.example.musicapp.TelaLogin;
+import com.example.musicapp.activity.HomeActivity;
+import com.example.musicapp.activity.TelaLogin;
 import com.example.musicapp.databinding.ActivityTelaCadastroBinding;
 
 public class TelaCadastro extends AppCompatActivity {
@@ -29,6 +29,7 @@ public class TelaCadastro extends AppCompatActivity {
         });
 
         binding.edtNome.requestFocus();
+
 
         binding.btnCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override

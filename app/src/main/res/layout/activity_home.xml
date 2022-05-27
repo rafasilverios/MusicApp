@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".activity.HomeActivity">
 
     <TextView
         android:id="@+id/tvViewAll"
@@ -60,7 +60,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvMusic"
-        app:srcCompat="@drawable/search" />
+        app:srcCompat="@drawable/search"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/ibLupa"
@@ -68,11 +69,11 @@
         android:layout_height="30dp"
         android:layout_marginTop="8dp"
         android:background="@color/grey_18"
-        android:onClick="onClickivLupa"
         app:layout_constraintEnd_toEndOf="@+id/ivSearch"
         app:layout_constraintStart_toEndOf="@+id/etSearch"
         app:layout_constraintTop_toTopOf="@id/ivSearch"
-        app:srcCompat="@drawable/lupa" />
+        app:srcCompat="@drawable/lupa"
+        tools:ignore="ContentDescription" />
 
     <EditText
         android:id="@+id/etSearch"
@@ -85,7 +86,9 @@
         android:inputType="textPersonName"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="@+id/ivSearch"
-        app:layout_constraintTop_toTopOf="@+id/ivSearch" />
+        app:layout_constraintTop_toTopOf="@+id/ivSearch"
+        tools:ignore="ContentDescription"
+        android:autofillHints="Search" />
 
     <TextView
         android:id="@+id/tvAll"
@@ -98,7 +101,8 @@
         android:layout_marginStart="32dp"
         android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@id/ivSearch"
-        tools:layout_editor_absoluteX="32dp" />
+        tools:layout_editor_absoluteX="32dp"
+        tools:ignore="ContentDescription"/>
 
     <TextView
         android:id="@+id/tvAlbum"
@@ -109,7 +113,8 @@
         android:text="@string/album"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivSearch" />
+        app:layout_constraintTop_toBottomOf="@id/ivSearch"
+        tools:ignore="ContentDescription"/>
 
     <TextView
         android:id="@+id/tvFavourite"
@@ -132,7 +137,8 @@
         app:layout_constraintTop_toBottomOf="@+id/tvAll"
         app:srcCompat="@drawable/caixab"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="231dp" />
+        tools:layout_editor_absoluteY="231dp"
+        tools:ignore="ContentDescription"/>
 
     <ImageView
         android:id="@+id/ivCold"
@@ -143,7 +149,8 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="32dp"
         app:srcCompat="@drawable/coldplay"
-        tools:layout_editor_absoluteX="32dp" />
+        tools:layout_editor_absoluteX="32dp"
+        tools:ignore="ContentDescription"/>
 
     <TextView
         android:id="@+id/tvColdPlay"
@@ -183,7 +190,8 @@
         app:layout_constraintTop_toTopOf="@+id/ivCaixab1"
         app:srcCompat="@drawable/ic_baseline_play_black_arrow_24"
         tools:layout_editor_absoluteX="305dp"
-        tools:layout_editor_absoluteY="237dp" />
+        tools:layout_editor_absoluteY="237dp"
+        tools:ignore="ContentDescription"/>
 
     <ImageButton
         android:id="@+id/ibPontos"
@@ -195,7 +203,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="32dp"
         app:srcCompat="@drawable/pontos1"
-        tools:layout_editor_absoluteX="359dp" />
+        tools:layout_editor_absoluteX="359dp"
+        tools:ignore="ContentDescription"/>
 
     <ImageView
         android:id="@+id/ivCaixar"
@@ -203,7 +212,8 @@
         android:layout_height="80dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivCaixab1"
-        app:srcCompat="@drawable/caixar" />
+        app:srcCompat="@drawable/caixar"
+        tools:ignore="ContentDescription"/>
 
     <ImageButton
         android:id="@+id/ibPlay2"
@@ -216,7 +226,8 @@
         app:layout_constraintTop_toTopOf="@+id/ivCaixar"
         app:srcCompat="@drawable/ic_baseline_play_black_arrow_24"
         tools:layout_editor_absoluteX="305dp"
-        tools:layout_editor_absoluteY="237dp" />
+        tools:layout_editor_absoluteY="237dp"
+        tools:ignore="ContentDescription"/>
 
     <ImageButton
         android:id="@+id/ibPontos2"
@@ -228,7 +239,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="32dp"
         app:srcCompat="@drawable/pontos1"
-        tools:layout_editor_absoluteX="359dp" />
+        tools:layout_editor_absoluteX="359dp"
+        tools:ignore="ContentDescription"/>
 
     <TextView
         android:id="@+id/tvEnter"
@@ -241,7 +253,8 @@
         app:layout_constraintStart_toEndOf="@id/ivMetallica"
         app:layout_constraintTop_toTopOf="@+id/ivCaixar"
         tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="253dp" />
+        tools:layout_editor_absoluteY="253dp"
+        tools:ignore="ContentDescription"/>
 
     <TextView
         android:id="@+id/tvMetallica"
@@ -266,7 +279,8 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="32dp"
         app:srcCompat="@drawable/metallica"
-        tools:layout_editor_absoluteX="32dp" />
+        tools:layout_editor_absoluteX="32dp"
+        tools:ignore="ContentDescription"/>
 
     <ImageView
         android:id="@+id/ivCaixab2"
@@ -274,7 +288,8 @@
         android:layout_height="78dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivCaixar"
-        app:srcCompat="@drawable/caixab" />
+        app:srcCompat="@drawable/caixab"
+        tools:ignore="ContentDescription"/>
 
     <ImageButton
         android:id="@+id/ibPlay3"
@@ -287,7 +302,8 @@
         app:layout_constraintTop_toTopOf="@+id/ivCaixab2"
         app:srcCompat="@drawable/ic_baseline_play_black_arrow_24"
         tools:layout_editor_absoluteX="305dp"
-        tools:layout_editor_absoluteY="237dp" />
+        tools:layout_editor_absoluteY="237dp"
+        tools:ignore="ContentDescription"/>
 
     <ImageButton
         android:id="@+id/ibPontos3"
@@ -299,7 +315,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="32dp"
         app:srcCompat="@drawable/pontos1"
-        tools:layout_editor_absoluteX="359dp" />
+        tools:layout_editor_absoluteX="359dp"
+        tools:ignore="ContentDescription"/>
 
     <TextView
         android:id="@+id/tvFade"
@@ -326,7 +343,8 @@
         app:layout_constraintStart_toEndOf="@id/ivMetallica2"
         app:layout_constraintTop_toBottomOf="@+id/tvFade"
         tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="253dp" />
+        tools:layout_editor_absoluteY="253dp"
+        tools:ignore="ContentDescription"/>
 
     <ImageView
         android:id="@+id/ivMetallica2"
@@ -337,7 +355,8 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="32dp"
         app:srcCompat="@drawable/metallica2"
-        tools:layout_editor_absoluteX="32dp" />
+        tools:layout_editor_absoluteX="32dp"
+        tools:ignore="ContentDescription"/>
 
     <ImageView
         android:id="@+id/ivCaixab3"
@@ -345,7 +364,8 @@
         android:layout_height="78dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivCaixab2"
-        app:srcCompat="@drawable/caixab" />
+        app:srcCompat="@drawable/caixab"
+        tools:ignore="ContentDescription"/>
 
 
     <ImageView
@@ -357,7 +377,8 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="32dp"
         app:srcCompat="@drawable/linkinpark"
-        tools:layout_editor_absoluteX="32dp" />
+        tools:layout_editor_absoluteX="32dp"
+        tools:ignore="ContentDescription"/>
 
     <ImageButton
         android:id="@+id/ibPlay4"
@@ -370,7 +391,8 @@
         app:layout_constraintTop_toTopOf="@+id/ivCaixab3"
         app:srcCompat="@drawable/ic_baseline_play_black_arrow_24"
         tools:layout_editor_absoluteX="305dp"
-        tools:layout_editor_absoluteY="237dp" />
+        tools:layout_editor_absoluteY="237dp"
+        tools:ignore="ContentDescription"/>
 
     <ImageButton
         android:id="@+id/ibPontos4"
@@ -382,15 +404,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="32dp"
         app:srcCompat="@drawable/pontos1"
-        tools:layout_editor_absoluteX="359dp" />
+        tools:layout_editor_absoluteX="359dp"
+        tools:ignore="ContentDescription"/>
 
     <TextView
         android:id="@+id/tvInTheEnd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"        android:fontFamily="serif"
-        android:text="In The End"
+        android:layout_marginTop="16dp"
+        android:text="@string/in_the_end"
         android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@id/ivLinkin"
         app:layout_constraintTop_toTopOf="@+id/ivCaixab3"
@@ -403,7 +426,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="5dp"
-        android:text="Linkin Park"
+        android:text="@string/linkin_park"
         android:textColor="@color/black"
         android:textSize="13sp"
         app:layout_constraintStart_toEndOf="@id/ivLinkin"
@@ -418,7 +441,8 @@
         android:layout_height="78dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivCaixab3"
-        app:srcCompat="@drawable/caixab" />
+        app:srcCompat="@drawable/caixab"
+        tools:ignore="ContentDescription"/>
 
     <ImageView
         android:id="@+id/ivAkon"
@@ -429,7 +453,8 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="32dp"
         app:srcCompat="@drawable/akon"
-        tools:layout_editor_absoluteX="32dp" />
+        tools:layout_editor_absoluteX="32dp"
+        tools:ignore="ContentDescription"/>
 
     <ImageButton
         android:id="@+id/ibPlay5"
@@ -442,7 +467,8 @@
         app:layout_constraintTop_toTopOf="@+id/ivCaixab4"
         app:srcCompat="@drawable/ic_baseline_play_black_arrow_24"
         tools:layout_editor_absoluteX="305dp"
-        tools:layout_editor_absoluteY="237dp" />
+        tools:layout_editor_absoluteY="237dp"
+        tools:ignore="ContentDescription"/>
 
     <ImageButton
         android:id="@+id/ibPontos5"
@@ -454,7 +480,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="32dp"
         app:srcCompat="@drawable/pontos1"
-        tools:layout_editor_absoluteX="359dp" />
+        tools:layout_editor_absoluteX="359dp"
+        tools:ignore="ContentDescription"/>
 
     <TextView
         android:id="@+id/tvWhatYouGot"

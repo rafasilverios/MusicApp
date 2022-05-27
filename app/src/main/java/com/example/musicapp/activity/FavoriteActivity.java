@@ -1,4 +1,4 @@
-package com.example.musicapp;
+package com.example.musicapp.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,7 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
+import com.example.musicapp.R;
 import com.example.musicapp.databinding.ActivityFavoriteBinding;
 import com.example.musicapp.recyclerview.SearchActivity;
 import com.example.musicapp.sharedpref.PerfilActivity;
@@ -33,9 +35,11 @@ public class FavoriteActivity extends AppCompatActivity {
         binding.ivCoracao.setOnClickListener(v -> {
             if (cont == 1) {
                 binding.ivCoracao.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+                Toast.makeText(FavoriteActivity.this, "Não está mais entre seus Favoritos", Toast.LENGTH_SHORT).show();
                 cont = 0;
             }else {
                 binding.ivCoracao.setImageResource(R.drawable.ic_baseline_favorite_24);
+                Toast.makeText(FavoriteActivity.this, "Salvo em Favoritos", Toast.LENGTH_SHORT).show();
                 cont = 1;
             }
         });
@@ -43,9 +47,11 @@ public class FavoriteActivity extends AppCompatActivity {
         binding.ivCoracao2.setOnClickListener(v -> {
             if (cont2 == 1) {
                 binding.ivCoracao2.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+                Toast.makeText(FavoriteActivity.this, "Não está mais entre seus Favoritos", Toast.LENGTH_SHORT).show();
                 cont2 = 0;
             }else {
                 binding.ivCoracao2.setImageResource(R.drawable.ic_baseline_favorite_24);
+                Toast.makeText(FavoriteActivity.this, "Salvo em Favoritos", Toast.LENGTH_SHORT).show();
                 cont2 = 1;
             }
         });
@@ -53,9 +59,11 @@ public class FavoriteActivity extends AppCompatActivity {
         binding.ivCoracao3.setOnClickListener(v -> {
             if (cont3 == 1) {
                 binding.ivCoracao3.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+                Toast.makeText(FavoriteActivity.this, "Não está mais entre seus Favoritos", Toast.LENGTH_SHORT).show();
                 cont3 = 0;
             }else {
                 binding.ivCoracao3.setImageResource(R.drawable.ic_baseline_favorite_24);
+                Toast.makeText(FavoriteActivity.this, "Salvo em Favoritos", Toast.LENGTH_SHORT).show();
                 cont3 = 1;
             }
         });
@@ -63,9 +71,11 @@ public class FavoriteActivity extends AppCompatActivity {
         binding.ivCoracao4.setOnClickListener(v -> {
             if (cont4 == 1) {
                 binding.ivCoracao4.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+                Toast.makeText(FavoriteActivity.this, "Não está mais entre seus Favoritos", Toast.LENGTH_SHORT).show();
                 cont4 = 0;
             }else {
                 binding.ivCoracao4.setImageResource(R.drawable.ic_baseline_favorite_24);
+                Toast.makeText(FavoriteActivity.this, "Salvo em Favoritos", Toast.LENGTH_SHORT).show();
                 cont4 = 1;
             }
         });
@@ -73,9 +83,11 @@ public class FavoriteActivity extends AppCompatActivity {
         binding.ivCoracao5.setOnClickListener(v -> {
             if (cont5 == 1) {
                 binding.ivCoracao5.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+                Toast.makeText(FavoriteActivity.this, "Não está mais entre seus Favoritos", Toast.LENGTH_SHORT).show();
                 cont5 = 0;
             }else {
                 binding.ivCoracao5.setImageResource(R.drawable.ic_baseline_favorite_24);
+                Toast.makeText(FavoriteActivity.this, "Salvo em Favoritos", Toast.LENGTH_SHORT).show();
                 cont5 = 1;
             }
         });

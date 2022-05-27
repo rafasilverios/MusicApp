@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:text="CADASTRO"
+        android:text="@string/cadastro"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -30,7 +30,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="Preencha os campos abaixo para efetuar o cadastro"
+        android:text="@string/preencha_os_campos_abaixo_para_efetuar_o_cadastro"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/edt_nome"
@@ -43,32 +43,36 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="32dp"
         android:layout_marginTop="200dp"
-        android:hint="Nome"
+        android:hint="@string/nome"
         android:inputType="textPersonName"
+        android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@+id/tvMusic"
-        tools:layout_editor_absoluteX="100dp" />
+        tools:layout_editor_absoluteX="100dp"
+        android:autofillHints="Nome" />
 
     <EditText
         android:id="@+id/edt_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
-        android:hint="E-mail"
+        android:hint="@string/e_mail"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_nome" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_nome"
+        android:autofillHints="E-mail" />
 
     <EditText
         android:id="@+id/edt_senha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
-        android:hint="Senha"
+        android:hint="@string/senha"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_email"
+        android:autofillHints="Senha" />
 
     <Button
         android:id="@+id/btn_cadastrar"
@@ -76,7 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
         android:backgroundTint="@color/pink"
-        android:text="Cadastrar"
+        android:text="@string/cadastrar"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:text="Já tem cadastro? Clique aqui!"
+        android:text="@string/j_tem_cadastro_clique_aqui"
         android:textSize="12sp"
         android:textColor="@color/intense_grey"
         app:layout_constraintEnd_toEndOf="parent"

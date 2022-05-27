@@ -17,4 +17,25 @@
     <string name="music">MUSIC</string>
     <string name="todo">TODO</string>
     <string name="_3_54_m">3:54 m</string>
+    <string name="in_the_end">In The End</string>
+    <string name="linkin_park">Linkin Park</string>
+    <string name="buscar_nova_musicas">Buscar Nova Musicas</string>
+    <string name="seus_favoritos">Seus Favoritos</string>
+    <string name="favoritos">FAVORITOS</string>
+    <string name="pesquisa">PESQUISA</string>
+    <string name="sugest_es">Sugestões</string>
+    <string name="preencha_os_campos_abaixo_para_efetuar_o_cadastro">Preencha os campos abaixo para efetuar o cadastro</string>
+    <string name="nome">Nome</string>
+    <string name="e_mail">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="j_tem_cadastro_clique_aqui">Já tem cadastro? Clique aqui!</string>
+    <string name="cadastro">CADASTRO</string>
+    <string name="login">LOGIN</string>
+    <string name="informe_seus_dados_para_efetuar_o_login">Informe seus dados para efetuar o login</string>
+    <string name="entrar">Entrar</string>
+    <string name="n_o_possui_cadastro_clique_aqui">Não possui cadastro? Clique aqui!</string>
+    <string name="titulo">Título</string>
+    <string name="ano">Ano</string>
+    <string name="genero">Gênero</string>
 </resources>

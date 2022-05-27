@@ -11,8 +11,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.example.musicapp.FavoriteActivity;
-import com.example.musicapp.HomeActivity;
+import com.example.musicapp.activity.FavoriteActivity;
+import com.example.musicapp.activity.HomeActivity;
 import com.example.musicapp.sharedpref.PerfilActivity;
 import com.example.musicapp.R;
 import com.example.musicapp.databinding.ActivityNowPlayingBinding;

@@ -9,8 +9,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.example.musicapp.FavoriteActivity;
-import com.example.musicapp.HomeActivity;
+import com.example.musicapp.activity.FavoriteActivity;
+import com.example.musicapp.activity.HomeActivity;
 import com.example.musicapp.R;
 import com.example.musicapp.databinding.ActivityPerfilBinding;
 import com.example.musicapp.recyclerview.SearchActivity;

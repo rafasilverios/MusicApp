@@ -1,4 +1,4 @@
-package com.example.musicapp;
+package com.example.musicapp.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.musicapp.R;
 import com.example.musicapp.databinding.ActivityHomeBinding;
 import com.example.musicapp.recyclerview.NowPlaying;
 import com.example.musicapp.recyclerview.SearchActivity;

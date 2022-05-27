@@ -9,8 +9,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.musicapp.FavoriteActivity;
-import com.example.musicapp.HomeActivity;
+import com.example.musicapp.activity.FavoriteActivity;
+import com.example.musicapp.activity.HomeActivity;
 import com.example.musicapp.sharedpref.PerfilActivity;
 import com.example.musicapp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
