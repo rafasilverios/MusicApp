@@ -23,7 +23,13 @@ São apenas implementações visuais para testar o que estou aprendendo em Andro
 - Na tela de perfil, quando pressionado o botão para mostrar dados do usuário (flecha para baixo), agora é possível ocultar os dados pressionando o botão novamente (flecha para cima).
 #
 
-### ATUALIZAÇÃO 3 (26/05/2022):
+### ATUALIZAÇÃO 3 BottomNavigation (26/05/2022):
 - Havia uma barra de navegação na parte inferior que era apenas visual e nãoo era funcional. A partir dessa atualização, agora a barra de navegação passa a ser uma BottomNavigation;
 - Utilizado BottomNavigationView para navegação entre Activities;
 - Foram criadas mais duas telas, de favoritos e de pesquisa, que serão finalizadas em breve.
+#
+
+### ATUALIZAÇÃO 4 RecyclerView (27/05/2022):
+- Implementação de Recycler view nas telas "NowPlaying" e "Pesquisa";
+- Finalização das telas de pesquisa e favoritos;
+- Criação de tala de login, possibilitando alternar entre cadastro e login.
