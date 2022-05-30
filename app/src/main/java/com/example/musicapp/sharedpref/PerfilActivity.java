@@ -12,6 +12,7 @@ import android.view.View;
 import com.example.musicapp.activity.FavoriteActivity;
 import com.example.musicapp.activity.HomeActivity;
 import com.example.musicapp.R;
+import com.example.musicapp.activity.TelaLogin;
 import com.example.musicapp.databinding.ActivityPerfilBinding;
 import com.example.musicapp.recyclerview.SearchActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -63,7 +64,7 @@ public class PerfilActivity extends AppCompatActivity {
         binding.tvFinalizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(getApplicationContext(), TelaCadastro.class);
+                Intent intent2 = new Intent(getApplicationContext(), TelaLogin.class);
                 startActivity(intent2);
             }
         });

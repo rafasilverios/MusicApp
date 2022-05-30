@@ -27,40 +27,39 @@ public class HomeActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
-        binding.ibPlay2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), NowPlaying.class);
-                startActivity(intent);
-            }
+        binding.ibPlay2.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), NowPlaying.class);
+            startActivity(intent);
+        });
+
+        binding.ibBack.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), TelaLogin.class);
+            startActivity(intent);
         });
 
         bottomNavigationView = findViewById(R.id.boottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.ic_home);
 
-        bottomNavigationView.setOnItemSelectedListener(new BottomNavigationView.OnItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        bottomNavigationView.setOnItemSelectedListener(item -> {
 
-                switch (item.getItemId()) {
-                    case R.id.ic_home:
-                        return true;
-                    case R.id.ic_search:
-                        startActivity(new Intent(getApplicationContext(), SearchActivity.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                    case R.id.ic_favorite:
-                        startActivity(new Intent(getApplicationContext(), FavoriteActivity.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                    case R.id.ic_profile:
-                        startActivity(new Intent(getApplicationContext(), PerfilActivity.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                }
-
-                return false;
+            switch (item.getItemId()) {
+                case R.id.ic_home:
+                    return true;
+                case R.id.ic_search:
+                    startActivity(new Intent(getApplicationContext(), SearchActivity.class));
+                    overridePendingTransition(0,0);
+                    return true;
+                case R.id.ic_favorite:
+                    startActivity(new Intent(getApplicationContext(), FavoriteActivity.class));
+                    overridePendingTransition(0,0);
+                    return true;
+                case R.id.ic_profile:
+                    startActivity(new Intent(getApplicationContext(), PerfilActivity.class));
+                    overridePendingTransition(0,0);
+                    return true;
             }
+
+            return false;
         });
     }
 }

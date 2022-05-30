@@ -20,8 +20,15 @@ public class TelaLogin extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
+        binding.edtEmail.requestFocus();
+
         binding.tvSemLogin.setOnClickListener(v -> {
             Intent intent = new Intent(getApplicationContext(), TelaCadastro.class);
+            startActivity(intent);
+        });
+
+        binding.btnEntrar.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
             startActivity(intent);
         });
 

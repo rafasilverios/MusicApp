@@ -40,6 +40,16 @@
 
     </RelativeLayout>
 
+    <ImageButton
+        android:id="@+id/ibBack"
+        android:layout_width="16dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvMusic"
+        app:srcCompat="@drawable/ic_arrow_back_ios" />
+
     <TextView
         android:id="@+id/tvMusic"
         android:layout_width="wrap_content"
